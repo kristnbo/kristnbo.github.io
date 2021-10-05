@@ -39,7 +39,7 @@ jobs:
       - name: Build
         run: npm run build
       - name: User feedback
-        run: echo "Deploying the code of $NAME"
+        run: echo "Deploying the code of $NAME with pwd $SECRET"
         env:
           NAME: Kræs
           SECRET: ${{secrets.PASSWORD}}
