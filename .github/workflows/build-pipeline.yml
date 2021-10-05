@@ -17,8 +17,8 @@ jobs:
           node-version: '14.x'
       - name: Install dependencies
         run: npm ci
-      - name: Run tests
-        run: npm test
+      #- name: Run tests
+      #  run: npm test
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -30,9 +30,11 @@ jobs:
           node-version: '14.x'
       - name: Install dependencies
         run: npm ci
+      - name: Build
+        run: npm run build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
-          folder: src
+          folder: dist
       # Step 2: Add deploy to Github pages here! Hot tip - The solution is in the Readme
