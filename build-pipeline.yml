@@ -39,12 +39,9 @@ jobs:
       - name: Build
         run: npm run build
       - name: User feedback
-        run: echo "Deploying the code of $NAME"
+        run: echo "Deploying the code of $NAME with pwd $SECRET"
         env:
           NAME: Kræs
-      - name: Secrets
-        run: echo "Secret, $SECRET"
-        env:
           SECRET: ${{secrets.PASSWORD}}
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
