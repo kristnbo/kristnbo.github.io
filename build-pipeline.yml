@@ -42,6 +42,9 @@ jobs:
         run: echo "Deploying the code of $NAME"
         env:
           NAME: Kræs
+      - name: Secrets
+        run: echo "Secret, $SECRET"
+        env:
           SECRET: ${{secrets.PASSWORD}}
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
