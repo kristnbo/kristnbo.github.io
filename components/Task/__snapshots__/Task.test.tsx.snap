@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Task snapshot 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 20%;
+  box-shadow: 0px -1px 0px 0px #4a4a4a;
+  background-color: #85CC7E;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  margin-top: 1rem;
+}
+
+.c2 {
+  height: 10rem;
+  margin: 0 0 0 1rem;
+}
+
+.c3 {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c4 {
+  font-size: 2rem;
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+}
+
+.c5 {
+  color: #4a4a4a;
+  margin: auto 0;
+}
+
+<section
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <img
+        class="c2"
+      />
+      <div
+        class="c3"
+      >
+        <h3
+          class="c4"
+        >
+          Better safe than sorry!
+        </h3>
+        <p
+          class="c5"
+        >
+          Quality assurance is key! Write the neccessary commands to automatically test your code. Each time you push new code to a specific branch, Github actions ought to run all unit tests in the code.
+        </p>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
