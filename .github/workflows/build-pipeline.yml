@@ -38,6 +38,10 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+      - name: User feedback
+        run: echo "Deploying the code of $NAME"
+        env:
+          NAME: Kræs
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
