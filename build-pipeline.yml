@@ -19,8 +19,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      #- name: Run tests
-      #  run: npm test
+      - name: Run tests
+        run: npm test
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -39,4 +39,3 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
-      # Step 2: Add deploy to Github pages here! Hot tip - The solution is in the Readme
